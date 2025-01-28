@@ -9,7 +9,7 @@ Introduced in 1960 by Irving S. Reed and Gustave Solomon, members of MIT Lincoln
 Instead of operating over only a few bits like the Hamming codes, the Reed-Solomon extends this further by operating over entire characters. It is defined as the following parameters. 
 RS(n, k). S = the number of bits in a character or symbol. K = the number of s-bit characters comprising the data block. N = the number of bits in the code word. 
 
-![alt text]([[http://url/to/img.png](https://media.geeksforgeeks.org/wp-content/uploads/20220210103827/Representationonnbitssolomoncodes.png)](https://github.com/ejnorman/CSB330-2025-MELT/blob/main/Week%201/Solomon%20codes.png))
+![alt text](https://github.com/ejnorman/CSB330-2025-MELT/blob/main/Week%201/Solomon%20codes.png)
 
 The RS codes can be broken up into two parts. Encoding and decoding. What happens in encoding is when we have a message that we want to send the RS codes will add extra information to your message called parity symbols so that in the case part of the message is lost we are still able to figure out the original message. The extra words added to our message are able to give us clues. This process is accomplished by encoding the message as a polynomial p(x) and multiplied with a polynomial generator where g(x) = (x-a)(x-a^2)(x-a^3).
 
