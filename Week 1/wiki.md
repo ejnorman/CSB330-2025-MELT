@@ -1,6 +1,6 @@
-# Collaborative Wiki 1
+# Hamming and Reed-Solomon Codes 
 
-Hamming and Reed-Solomon Codes Wiki
+In the 1940s, being fed up with the punch card computer’s inaccuracy of checking punch cards, Richard Hamming would begin to develop a less error prone way for the computer to read data. Hamming would later go on to create the world's first error checking system. From then on many error checking systems began to develop, including the Reed-Solomon error checking system that allowed for even larger errors to be corrected. Even today these two error checking systems are commonly used across many aspects of technology.
 
 Hamming
 
@@ -23,5 +23,14 @@ RS(n, k). S = the number of bits in a character or symbol. K = the number of s-b
 ![alt text](https://github.com/ejnorman/CSB330-2025-MELT/blob/main/Week%201/Solomon%20codes.png)
 
 The RS codes can be broken up into two parts. Encoding and decoding. What happens in encoding is when we have a message that we want to send the RS codes will add extra information to your message called parity symbols so that in the case part of the message is lost we are still able to figure out the original message. The extra words added to our message are able to give us clues. This process is accomplished by encoding the message as a polynomial p(x) and multiplied with a polynomial generator where g(x) = (x-a)(x-a^2)(x-a^3).
+
+Hamming vs Reed-Solomon
+
+So this begs the question: which one is better? Well the answer is it depends. Hamming codes are simple and efficient, but they can only catch single bit errors. On the other hand, Reed-Solomon codes can correct bursts of errors, but implementing them is not as easy. Let's discuss the strengths each error checking method has over the other.
+
+Hamming codes excel in environments where data transmission accuracy is most important. Its intuitive bit parity system can be implemented with relative ease, making it relatively inexpensive to run, unlike Reed-Solomon codes that are difficult to implement. Also with its simple methodology it can correct errors instantly and accurately. Hamming codes are often used in computer memory, specifically with error correction code. Hamming codes work great in computer memory because there is lots of moving data in an environment where multiple bit errors and errors in general are uncommon. Hamming codes’ big drawback is that it can only correct single bit errors, so in environments where errors are common Reed-Solomon codes are much more useful.
+
+Reed-Solomon codes excel in environments where errors are very likely to occur. With Reed-Solomon’s ability to work on many more bits at once, it can more effectively correct large gaps in data. For example: ever wonder how a scratched CD can still have its data read onto a device? With Reed-Solomon codes, the device that is reading the disk can still fill in the gaps despite the large gaps of data. Other places where Reed-Solomon codes are used are: barcodes, QR codes, satellite communication, and television. The big drawback is its efficiency. Reed-Solomon codes use complex mathematical formulas to compute error checks, whereas Hamming codes are simple and easy to implement.
+
 
 
