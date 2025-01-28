@@ -12,6 +12,8 @@ The process of encoding involves adding these parity bits to a message, while de
 
 Hamming Codes are efficient for systems requiring basic error correction but are limited to single-bit errors. Despite their simplicity, they remain widely used in applications such as ECC (Error-Correcting Code) memory, where single-bit reliability is essential.
 
+Hamming Codes, while effective for simple systems, are not suitable for detecting or correcting multiple-bit errors. For systems requiring more robust error correction, other algorithms like Reed-Solomon are preferred. Nevertheless, Hamming Codes are valuable due to their simplicity and efficiency, particularly in environments where low computational overhead is desired.
+
 
 ## Reed Solomon
 
