@@ -26,7 +26,7 @@ Submarine cables have a generally low impact on the surrounding environment, but
 
 However, submarine cables generally have a more positive impact on the environment in comparison to other forms of network communication. Satellites require a lot of energy to send and receive signals and require power intensive ground stations and space launches. Also, cables can serve as artificial reefs and aren’t very harmful to the surrounding environment due to not having many pollutants.   
 
-## Conclusion
+##
 	
 Submarine communication cables are an effective and fast way to send network signals over a long distance. Although technologies like Low Earth Orbit satellites aim to compete in network communication, submarine cables are here to stay. Their low environmental impact, relatively low cost and vast infrastructure make them a mainstay in long distance network communication. 
 
